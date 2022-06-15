@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
-  "version": "${version}",
+  "id": "base_mod",
+  "version": "0.0.1",
 
   "name": "Example Mod",
   "description": "This is an example description! Tell everyone what your mod is about!",
@@ -14,12 +14,15 @@
   },
 
   "license": "CC0-1.0",
-  "icon": "assets/modid/icon.png",
+  "icon": "assets/base_mod/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "main": [
       "net.fabricmc.example.ExampleMod"
+    ],
+    "client": [
+      "net.fabricmc.example.EntityTestingClient"
     ]
   },
   "mixins": [
