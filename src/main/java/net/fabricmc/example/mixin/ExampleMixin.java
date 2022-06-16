@@ -20,6 +20,6 @@ public class ExampleMixin {
 	@Inject(at = @At("HEAD"), method = "init()V")
 	private void init(CallbackInfo info) {
 		this.splashText = "Electronics Service!";
-		ExampleMod.LOGGER.info("running init");
+		ExampleMod.LOGGER.debug("ExampleMixin::init");
 	}
 }
